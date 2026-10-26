@@ -1,0 +1,16 @@
+// Cartoon avatar SVG data URIs for student profiles (100% offline, cartoon-styled, crisp vector graphics)
+export const cartoonAvatars = [
+  // 1. Cool student with teal cap and glasses
+  `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="%23E6F7F5"/><circle cx="50" cy="48" r="26" fill="%23FFD1A4"/><path d="M24,34 Q50,14 76,34 Q50,22 24,34" fill="%230FA3A3"/><rect x="25" y="24" width="50" height="11" rx="5.5" fill="%230FA3A3"/><circle cx="41" cy="46" r="6" fill="none" stroke="%231F2937" stroke-width="2.5"/><circle cx="59" cy="46" r="6" fill="none" stroke="%231F2937" stroke-width="2.5"/><line x1="47" y1="46" x2="53" y2="46" stroke="%231F2937" stroke-width="2.5"/><circle cx="41" cy="46" r="2.5" fill="%231F2937"/><circle cx="59" cy="46" r="2.5" fill="%231F2937"/><path d="M44,60 Q50,67 56,60" fill="none" stroke="%23E76F6F" stroke-width="2.5" stroke-linecap="round"/><path d="M22,94 Q50,72 78,94" fill="%230C7C7C"/></svg>`,
+
+  // 2. Cheerful student with purple hoodie
+  `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="%23F3E8FF"/><circle cx="50" cy="48" r="26" fill="%23FFDFBA"/><path d="M28,26 Q50,16 72,26 Q64,38 60,32 Q50,40 40,32 Q36,38 28,26" fill="%234A3E3D"/><circle cx="40" cy="46" r="3.5" fill="%231F2937"/><circle cx="60" cy="46" r="3.5" fill="%231F2937"/><circle cx="34" cy="53" r="3" fill="%23FFB6B6" opacity="0.6"/><circle cx="66" cy="53" r="3" fill="%23FFB6B6" opacity="0.6"/><path d="M44,58 Q50,66 56,58" fill="none" stroke="%23D97706" stroke-width="2.5" stroke-linecap="round"/><path d="M20,94 Q50,70 80,94" fill="%238B5CF6"/></svg>`,
+
+  // 3. Tech student with blue headphones
+  `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="%23FEF3DC"/><path d="M22,44 Q50,14 78,44" fill="none" stroke="%23374151" stroke-width="6" stroke-linecap="round"/><rect x="16" y="38" width="10" height="20" rx="5" fill="%230FA3A3"/><rect x="74" y="38" width="10" height="20" rx="5" fill="%230FA3A3"/><circle cx="50" cy="48" r="25" fill="%23FCD34D"/><path d="M30,34 Q50,22 70,34" fill="%231F2937"/><circle cx="41" cy="48" r="3.5" fill="%231F2937"/><circle cx="59" cy="48" r="3.5" fill="%231F2937"/><path d="M45,59 Q50,65 55,59" fill="none" stroke="%231F2937" stroke-width="2.5" stroke-linecap="round"/><path d="M22,94 Q50,72 78,94" fill="%233B82F6"/></svg>`,
+
+  // 4. Creative student with orange curls & pink outfit
+  `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="%23E0F2FE"/><circle cx="32" cy="30" r="12" fill="%23F97316"/><circle cx="50" cy="24" r="14" fill="%23F97316"/><circle cx="68" cy="30" r="12" fill="%23F97316"/><circle cx="50" cy="50" r="25" fill="%23FED7AA"/><circle cx="41" cy="47" r="3.5" fill="%231F2937"/><circle cx="59" cy="47" r="3.5" fill="%231F2937"/><path d="M43,59 Q50,68 57,59" fill="none" stroke="%23EA580C" stroke-width="2.5" stroke-linecap="round"/><path d="M20,95 Q50,74 80,95" fill="%23EC4899"/></svg>`
+];
+
+export default cartoonAvatars;
