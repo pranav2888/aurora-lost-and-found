@@ -1,0 +1,256 @@
+.navbar {
+  border-bottom: 1px solid var(--border-color, #EEF2F1);
+  background: var(--bg-card, #FFFFFF);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  gap: 20px;
+}
+
+.navbar-logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--teal-dark, #0C7C7C);
+  flex-shrink: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.navbar-logo span {
+  color: var(--teal, #0FA3A3);
+}
+
+.logo-dot {
+  color: #F2B84B !important;
+  font-size: 26px;
+  line-height: 0;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-links a,
+.auth-nav a {
+  color: var(--text-dark, #1F2937);
+  padding: 8px 6px;
+  border-bottom: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.navbar-links a:hover,
+.auth-nav a:hover {
+  color: var(--teal, #0FA3A3);
+}
+
+.navbar-links a.active,
+.auth-nav a.active {
+  color: var(--teal-dark, #0C7C7C);
+  border-bottom: 2px solid var(--teal, #0FA3A3);
+  font-weight: 600;
+}
+
+.nav-badge {
+  background: var(--error, #E76F6F);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 9px;
+  padding: 0 4px;
+}
+
+.nav-badge.badge-teal {
+  background: var(--teal, #0FA3A3);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.theme-toggle-btn {
+  background: var(--bg-card-secondary, #E6F7F5);
+  border: 1px solid var(--border-color, #CCEAE6);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+  background: var(--mint, #D4F4F0);
+}
+
+.user-profile-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-nav {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-dark, #1F2937);
+  font: inherit;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 24px;
+  transition: background 0.15s ease;
+}
+
+.profile-nav:hover {
+  background: var(--bg-card-secondary, #F4FBFB);
+}
+
+.profile-nav-name {
+  max-width: 105px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--teal, #0FA3A3);
+  color: #FFFFFF;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.profile-avatar.small {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  border: 2px solid var(--teal, #0FA3A3);
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-logout {
+  background: none;
+  border: 1px solid var(--border-color, #E0E5E4);
+  color: var(--text-muted, #6B7280);
+  padding: 6px 12px;
+  border-radius: 18px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.nav-logout:hover {
+  color: var(--error, #E76F6F);
+  border-color: var(--error, #E76F6F);
+  background: rgba(231, 111, 111, 0.08);
+}
+
+.auth-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth-nav .nav-signup {
+  color: #FFFFFF;
+  background: var(--teal, #0FA3A3);
+  padding: 8px 16px;
+  border-radius: 22px;
+  font-weight: 600;
+}
+
+.auth-nav .nav-signup:hover {
+  background: var(--teal-dark, #0C7C7C);
+  color: #fff;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--teal-dark, #0C7C7C);
+}
+
+@media (max-width: 990px) {
+  .navbar-inner {
+    gap: 12px;
+  }
+  .navbar-links {
+    gap: 12px;
+  }
+  .profile-nav-name {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--bg-card, #FFFFFF);
+    padding: 20px 24px;
+    gap: 14px;
+    border-bottom: 1px solid var(--border-color, #EEF2F1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  .navbar-links.open {
+    display: flex;
+  }
+  .navbar-actions {
+    margin-left: 0;
+  }
+  .auth-nav {
+    display: none;
+  }
+}
