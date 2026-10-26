@@ -1,0 +1,339 @@
+.form-page {
+  padding: 40px 24px 90px;
+}
+
+.form-page form {
+  text-align: left;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.req-star {
+  color: var(--error, #E76F6F);
+  font-weight: 700;
+}
+
+.input-error {
+  border-color: var(--error, #E76F6F) !important;
+  background-color: rgba(231, 111, 111, 0.03);
+}
+
+.error-banner {
+  background: #FBEAEA;
+  border-left: 4px solid var(--error, #E76F6F);
+  color: #B91C1C;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  text-align: left;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Two-column layout for Report Item: Form on Left, Real-Time Preview on Right */
+.form-and-preview-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 36px;
+  align-items: start;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.form-box-extended {
+  background: var(--bg-card, #FFFFFF);
+  border: 1px solid var(--border-color, #EEF2F1);
+  border-radius: var(--radius, 14px);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.live-preview-panel {
+  position: sticky;
+  top: 90px;
+  z-index: 10;
+}
+
+.preview-sticky-wrap {
+  background: var(--bg-card-secondary, #F4FBFB);
+  border: 1px solid var(--border-color, #CCEAE6);
+  border-radius: var(--radius, 14px);
+  padding: 20px;
+}
+
+.preview-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--teal-dark, #0C7C7C);
+  margin-bottom: 14px;
+}
+
+.preview-tag {
+  background: var(--teal, #0FA3A3);
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+/* Claim item banner */
+.claim-item-preview-banner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 620px;
+  margin: 0 auto 20px;
+  background: var(--bg-card-secondary, #E6F7F5);
+  border: 1px solid var(--border-color, #CCEAE6);
+  border-radius: var(--radius, 14px);
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.claim-thumb {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  border: 1px solid var(--teal, #0FA3A3);
+}
+
+.claim-preview-info h3 {
+  font-size: 17px;
+  margin: 4px 0;
+  color: var(--text-dark, #1F2937);
+}
+
+.claim-preview-info p {
+  font-size: 13px;
+  color: var(--text-muted, #6B7280);
+}
+
+/* Auth Cards */
+.auth-page {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-logo-badge {
+  display: inline-block;
+  background: var(--mint, #E6F7F5);
+  color: var(--teal-dark, #0C7C7C);
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.password-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrap input {
+  padding-right: 44px;
+}
+
+.toggle-pass-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-muted, #6B7280);
+}
+
+.pwd-strength-bar-wrap {
+  margin-top: 6px;
+}
+
+.pwd-strength-bar {
+  height: 4px;
+  border-radius: 2px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.pwd-strength-text {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: var(--text-muted, #6B7280);
+}
+
+/* Clean Single Card Profile */
+.profile-page-clean {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.profile-single-card-wrap {
+  width: 100%;
+}
+
+.profile-display-card {
+  background: var(--bg-card, #FFFFFF);
+  border: 1px solid var(--border-color, #EEF2F1);
+  border-radius: var(--radius, 14px);
+  padding: 38px 32px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.profile-avatar-wrap {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  background: var(--mint, #E6F7F5);
+  border: 3.5px solid var(--teal, #0FA3A3);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 163, 163, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatar-cartoon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-email-text {
+  color: var(--text-muted, #6B7280);
+  font-size: 14px;
+  margin: 4px 0 24px;
+}
+
+.profile-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  text-align: left;
+  background: var(--bg-card-secondary, #F4FBFB);
+  border: 1px solid var(--border-color, #CCEAE6);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.profile-info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-muted, #6B7280);
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 14px;
+  color: var(--text-dark, #1F2937);
+}
+
+.profile-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.profile-form-box {
+  margin-top: 0 !important;
+}
+
+/* Cartoon Avatar Selector */
+.cartoon-avatar-picker {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.cartoon-avatars-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.cartoon-avatar-option {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  overflow: hidden;
+  background: var(--bg-card-secondary, #F4FBFB);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cartoon-avatar-option:hover {
+  transform: scale(1.1);
+}
+
+.cartoon-avatar-option.selected {
+  border-color: var(--teal, #0FA3A3);
+  box-shadow: 0 0 0 3px rgba(15, 163, 163, 0.35);
+  transform: scale(1.05);
+}
+
+.cartoon-avatar-option img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .form-and-preview-layout {
+    grid-template-columns: 1fr;
+  }
+  .live-preview-panel {
+    display: none;
+  }
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+  .profile-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
